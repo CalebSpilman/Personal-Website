@@ -1,0 +1,305 @@
+/* General reset so a browser doesn't restructure my styling*/
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+     display: flex;
+     flex-direction: column;
+     min-height: 100vh;
+     background-color: #f4f4f4;
+     color: #333;
+     margin: 0;
+}
+
+/* Header styling*/
+header {
+     display: flex;
+     align-items: center;
+     justify-content: start;
+     background-color: #333 !important;
+     color: white;
+     flex-shrink: 1;
+     flex-wrap: wrap;
+}
+
+/* logo styling for size */
+.logo {
+     height: 70px;
+     width: 90px;
+     object-fit: cover;
+}
+
+
+/* Header page title link styling */
+.title-link {
+     color: white;
+     text-decoration: none;
+     transition: color 0.3s ease, transform 0.3s ease;
+     display: inline-block;
+}
+
+/* Header page title hover effects */
+.title-link:hover {
+     color: #f89e00;
+     transform: scale(1.025);
+     cursor: pointer;
+}
+
+/* Header logo link styling (scaling, color) */
+.logo-link img {
+     width: 75px;             
+     height: 75px;
+     border-radius: 50%; 
+     transition: transform 0.3s ease, box-shadow 0.3 ease;
+     object-fit: cover;   
+}
+
+/* Header logo hover effects (glow, scaling) */
+.logo-link:hover img {
+     transform: scale(1.05);
+     box-shadow: 0 0 10px 2px #f89e00;
+     cursor: pointer;
+}
+
+/* Modal button styling */
+.modal_button {
+     margin-left: auto;
+     font-size: 0.9rem;
+     white-space: nowrap;
+     flex-shrink: 1;
+}
+
+/* h1 styling */
+h1 {
+     font-size: 2rem;
+     word-break: break-word;
+}
+
+/* h2 font styling */
+h2 {
+     font-size: 2rem;
+     font-weight: bold;
+}
+
+/* h3 font styling */
+h3 {
+     font-size: 1.5rem;
+     font-weight: bold;
+}
+/* Navigation bar color styling */
+.navbar {
+     background-color: black;
+}
+
+/* Nav border styling to match blue button colors, (header color didn't contrast well enough due to the black and grey estetique */
+.custom-border {
+     border-bottom: 5px solid #1a7bfe;
+}
+
+/* Navbar page link styling */
+.navbar .nav-link {
+     color: white !important;
+}
+
+/* Navbar page link hover color effect */
+.navbar .nav-link:hover {
+     color: #1a7bfe !important;
+}
+
+/* Styling to ensure navbar is spaced properly */
+.navbar .container-fluid {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+    
+}
+/* Navbar toggler styling to ensures it stays on the right */
+.navbar-toggler {
+     margin-left: auto !important;
+}
+
+/* Navbar collapsible menu alignment */
+.navbar-collapse {
+     justify-content: flex-end;
+}
+
+/* Homepage background picture styling to cover full main */
+main.home-background {
+     background-image: url("../imagesP/backgroundP.jpg");
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-attachment: fixed; 
+     color: white; 
+     position: relative;
+     z-index: 0;
+}
+
+/* Background picture overlay styling for darkened blur effect */
+main.home-background::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     height: 100%;
+     width: 100%;
+     background-color: rgba(0, 0, 0, 0.6);
+     z-index: 1;
+}
+
+/* Styling to keep the main content above the overlay */
+main.home-background > * {
+     position: relative;
+     z-index: 2;
+}
+
+/* Styling to ensure main covers full page */
+main {
+     flex-grow: 1;
+     padding: 20px 20px 0px 20px;
+}
+
+/* Lead paragraph styling */
+.lead {
+     padding-left: 20px;
+}
+
+/* Styling for Dimensions of certificate img */
+.certificate {
+     height: 50 !important;
+     width: 75 !important;
+}
+
+/* Styling to ensure all cards are aligned and the same size when collapsed, and not spilling over when expanded */
+.card {
+     min-height: 350px; 
+     display: flex; 
+     flex-direction: column; 
+     overflow: hidden; 
+}
+
+/* Styling for the card body expansion function when the 'Learn More' button is clicked, allows for scrolling so expansion doesn't spill over */
+.card-body {
+     flex-grow: 1; 
+     overflow-y: auto;
+     justify-content: space-between;
+}
+
+/* Styling for the collapse function of the "Learn More" button */
+.collapse {
+     transition: max-height 0.5s ease-out; 
+}
+
+/* Learn more button styling, ensures button is at the bottom of the card */
+.card-body .btn {
+     margin-top: auto;
+}
+
+/* Styling for the images in the card body */
+.card-body img {
+     width: 100%;
+     max-height: 100px;
+     object-fit: contain;
+}
+
+/* Dimension styling for the image containers in the cards */
+.img-container {
+     width: 75px; 
+     height: 60px;
+     justify-content: space-between;
+     margin-left: 5px;
+     padding-right: 5px;
+      /*
+     display: flex;
+     justify-content: center; 
+     align-items: center; 
+     margin-bottom: 15px; */
+}
+
+/* Carousel 'next' and 'prev' button styling (color, size etc.) */
+.carousel-indicators button {
+     background-color: #1a7bfe;
+     width: 12px;
+     height: 12px;
+     border-radius: 50%;
+     border: none;
+     margin: 0 5px;
+}
+
+/* Background color styling of the dots that indicate the which slide in the carousel is active */
+.carousel-indicators .active {
+     background-color: #1a7bfe !important; 
+}
+
+/* Grey color for inactive drop down button */
+.btn-grey {
+     background-color: rgba(108, 117, 125, 0.2);
+     color: #6c757d; 
+     border: 1px solid rgba(108, 117, 125, 0.3); 
+     transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* dark grey color when drop down button is hovered over */
+.btn-grey:hover {
+     background-color: rgba(108, 117, 125, 0.4);
+     color: #343a40;
+}
+
+/* blue color for active drop down button */
+.btn-blue {
+     background-color: #1a7bfe;
+     color: black;
+     border: 1px solid #1a7bfe;
+     transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* dark blue color when drop down button is hovered over */
+.btn-blue:hover {
+     background-color: #d0e7ff;
+     color: white;
+}
+
+/* Footer styling */
+footer {
+     background-color: black !important;
+     color: white;
+     margin-top: auto;
+     display: flex;
+     align-items: center;
+     text-align: center;
+     height: auto;
+     
+}
+
+/* Footer social media icon styling */
+footer .social-media {
+     display: flex;
+     margin-left: auto !important;
+     align-items: center;
+}
+
+footer .linkedin {
+     padding: 4px;
+}
+
+footer .facebook {
+     padding: 4px;
+}
+
+footer .instagram {
+     padding: 4px;
+}
+
+/* Footer blue hover effects for social media icons */
+footer .facebook:hover svg,
+footer .linkedin:hover svg,
+footer .instagram:hover svg {
+  fill: #1a7bfe;
+  transition: fill 0.3s ease;
+}
+
+/* All other responsive design is done with inline bootstrap */

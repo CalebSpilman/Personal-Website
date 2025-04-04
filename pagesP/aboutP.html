@@ -1,0 +1,323 @@
+<!-- ABOUT PAGE -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>About - Caleb Spilman Portfolio</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="../cssP/stylesP.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+     
+     <!-- HEADER -->
+     <header class="py-3 px-1">
+          <div class="container-fluid d-flex flex-wrap align-items-center justify-content-between">
+               
+               <!-- LEFT SIDE: Logo + Title -->
+               <div class="d-flex flex-wrap align-items-start">
+                    <div>
+                    <!-- Logo -->
+                         <a href="../pagesP/homeP.html" class="logo-link me-2">
+                              <img src="../imagesP/logoP.png" alt="Caleb Spilman Consulting Logo" class="logo" />
+                         </a>
+                    </div>
+     
+                    <!-- Title -->
+                    <div class="text-start my-auto justify-content-sm-start">
+                         <a href="../pagesP/homeP.html" class="title-link">
+                              <h1 class="text-wrap">Caleb Spilman Professional Portfolio</h1>
+                         </a>
+                    </div>
+               </div>
+
+               <!-- RIGHT SIDE: Modal Button -->
+               <div class="modal_button my-md-auto ms-md-auto ms-0 mt-sm-3">
+                    <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#consultationModal"> 📩 Contact Me</a>
+               </div>
+          </div>
+     </header>
+
+     <!-- NAVIGATION -->
+     <nav class="navbar custom-border navbar-expand-lg navbar-dark">
+          <div class="container-fluid d-flex justify-content-between">
+               <!-- Nav Header -->
+               <div class="d-flex align-items-center">
+                    <span class="navbar-brand text-white">About</span>
+               </div>
+               <!-- Nav Toggler -->
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+               </button>
+               <!-- Nav Links -->
+               <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                         <li class="nav-item"><a class="nav-link" href="../pagesP/homeP.html">Home</a></li>
+                         <li class="nav-item"><a class="nav-link" href="../pagesP/blog.html">Blog</a></li>
+                         <li class="nav-item"><a class="nav-link" href="../pagesP/insightsP.html">Insights</a></li>
+                         <li class="nav-item"><a class="nav-link" href="../pagesP/contactP.html">Contact</a></li>
+                    </ul>
+               </div>
+          </div>
+     </nav>
+     
+     <!-- MAIN -->
+     <main class="container mt-3 mb-5">
+            
+     <!-- Carousel Section -->
+     <section class="">
+          <div id="aboutCarouselAutoplaying" class="carousel slide" data-bs-ride="carousel">
+     
+          <!-- Carousel Controls -->
+          <div class="carousel-indicators">
+               <button type="button" data-bs-target="#aboutCarouselAutoplaying" data-bs-slide-to="0" class="active rounded-pill mx-1" aria-current="true" aria-label="Slide 0"></button>
+               <button type="button" data-bs-target="#aboutCarouselAutoplaying" data-bs-slide-to="1" class="rounded-pill mx-1" aria-label="Slide 1"></button>
+               <button type="button" data-bs-target="#aboutCarouselAutoplaying" data-bs-slide-to="2" class="rounded-pill mx-1" aria-label="Slide 2"></button>
+               <button type="button" data-bs-target="#aboutCarouselAutoplaying" data-bs-slide-to="3" class="rounded-pill mx-1" aria-label="Slide 3"></button>
+               <button type="button" data-bs-target="#aboutCarouselAutoplaying" data-bs-slide-to="4" class="rounded-pill mx-1" aria-label="Slide 4"></button>
+          </div>
+          
+          <!-- Carousel Inner -->
+          <div class="carousel-inner">
+          
+               <!-- First Slide -->
+               <div class="carousel-item active">
+                    <img src="../imagesP/certificationP.png" class="d-block w-100" alt="An image of Caleb Spilman's Google Analytics Certification" style="height: 70vh;">
+               </div>
+               <!-- Second Slide -->
+               <div class="carousel-item">
+                    <img src="../imagesP/kingswoodP.jpg" class="d-block w-100" alt="An image of Kingswood Elementary School" style="height: 70vh;">
+                    <div class="carousel-caption d-none d-md-block">
+                         <h5>Kingswood Elementary School</h5>
+                         <p>Attended from 2007-2014</p>
+                    </div>
+               </div>
+               <!-- Third Slide -->
+               <div class="carousel-item">
+                    <img src="../imagesP/msmsP.jpg" class="d-block w-100" alt="An image of Madeline Symmonds Middle School" style="height: 70vh;">
+                    <div class="carousel-caption d-none d-md-block">
+                         <h5>Madeline Symmonds Middle School</h5>
+                         <p>Attended from 2014-2017</p>
+                    </div>
+               </div>
+               <!-- Fourth Slide -->
+               <div class="carousel-item">
+                    <img src="../imagesP/cpaP.jpg" class="d-block w-100" alt="An image of Charles P. Allen High School" style="height: 70vh;">
+                    <div class="carousel-caption d-none d-md-block">
+                         <h5>Charles P. Allen High School</h5>
+                         <p>Attended from 2017-2020</p>
+                    </div>
+               </div>
+               <!-- Fifth Slide -->
+               <div class="carousel-item">
+                    <img src="../imagesP/acadiaP.jpg" class="d-block w-100" alt="An image of Acadia University's Administration Building" style="height: 70vh;">
+                    <div class="carousel-caption d-none d-md-block">
+                         <h5>Acadia University</h5>
+                         <p>Attended from 2020-2025</p>
+                    </div>
+               </div>
+          </div>
+          
+          <!-- Carousel Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#aboutCarouselAutoplaying" data-bs-slide="prev">
+               <span class="fs-1 text-warning" style="filter: brightness(0) saturate(100%) invert(32%) sepia(93%) saturate(1416%) hue-rotate(192deg) brightness(90%) contrast(110%);" aria-hidden="true">&#10094;</span>
+               <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#aboutCarouselAutoplaying" data-bs-slide="next">
+               <span class="fs-1 text-warning" style="filter: brightness(0) saturate(100%) invert(32%) sepia(93%) saturate(1416%) hue-rotate(192deg) brightness(90%) contrast(110%);" aria-hidden="true">&#10095;</span>
+               <span class="visually-hidden">Next</span>
+          </button>
+          </div>
+     </section>
+     
+     <!-- My Story and Background -->
+     <section class="container">
+     <div class="col-lg-12 col-md-12 col-sm-12">
+     
+     <div class="d-flex align-items-center mt-5">
+          <h2 class="justify-content-center mb-0">My Story & Background</h2>
+          <!-- Button when collapsed -->
+          <button class="btn btn-grey ms-2 fs-6 btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#storyCollapse" aria-expanded="false" aria-controls="storyCollapse" id="openBtn">
+               <i class="bi bi-chevron-down"></i>
+          </button>
+
+          <!-- Button when expanded -->
+          <button class="btn btn-blue ms-2 fs-6 btn-sm d-none" type="button" data-bs-toggle="collapse" data-bs-target="#storyCollapse" aria-expanded="true" aria-controls="storyCollapse" id="closeBtn">
+               <i class="bi bi-chevron-up"></i>
+          </button>
+     </div>
+     </section>
+     
+     <!-- Story and Background paragraphs with collapsable section -->
+     <section class="container px-4">
+     <p class="mb-0 mt-3">
+          I was born in Halifax, Nova Scotia in 2002, and grew up in a community called Hammonds Plains, in a family of 6 with 2 younger sisters and a younger brother. My father worked as software systems analyst consultant, and my mother as a change management consultant. I attended
+          <span id="ellipsis">...</span>
+          <span class="collapse" id="storyCollapse">
+               Charles P. Allen High School in Bedford, Nova Scotia, and graduated in 2020 during the COVID-19 pandemic. As a kid i loved playing sport, particularly hockey, baseball and football for my highschool team in grade 11 and 12. 
+          </span>
+     </p>
+     <div class="collapse mt-3" id="storyCollapse">
+          <p>I attended Acadia University from 2020-2025, and obtained a Bachelor of Business Administration, spending my last two years pursuing a major in Business Technology Management and a Minor in Computer Science. Ever since I was roughly 13 years old, I had wanted to pursue a career in mechanical engineer. I spent a great deal of my free time working on projects of various sorts, building and soldering electrical circuitry and finding ways to construct functional bodies/housing for the electrical and mechanical components of my projects (ex: In grade 8 I built a homemade "Iron Man" suit..). While i graduated grade 10 with high honors, my tendencies as a social-being along with playing sports subconsciously took priority, and my grades for the remainder of High School weren't sufficient for mechanical engineering programs. I ended up opting for a career in business, being accepted to a handful of universities in Nova Scotia, finally choosing Acadia because it was about an hour from my childhood home and gave me a chance to develop independently away from my family while still being close enough to make the trip home when necessary. This was an important factor because family is invaluable to me above all else. </p>
+          <p>With business being my plan-b, I was initially unsure as to where I wanted to fit into the industry when I started my studies at Acadia. When the time had come to declare my major, I was at a cross roads between the various options the business school offered. Subconsciously, over my first few years studying at Acadia, i'd become enamoured by the ever-changing landscape of AI and how it was shaping business with the emergence of AI, ML, and GPT's. At the time, ChatGPT had just coming out, spiking my interest in the potential of this technology and the implications of it's use in organization processes. I could picture a future where businesses put significant resources into integrating and managing AI technology, and the relationship human-employees have with it. I decided this would be a great niche in the field of business to fit myself into. My school was offering a relatively new major called Business Technology Management which was the perfect avenue to position myself to manage this business-AI relationship. In the beginning of my studies for my major, I spent the majority of my time taking courses pertaining to the business side of the degree, with the odd computer science class. Not until my last year at Acadia did I completely immerse myself into computer science, opting for a course load mainly comprised of computer science courses, leading me to pursue a minor in computer science. </p>
+          <p>I graduated from Acadia in the spring of 2025, and that brings me to where I am now. I am eager to continue to build my skills and experience, and proceed to learn and grow with the industry as new technology and research develops, and shaped the fundamentals of how people and organizations do business.
+     </div>
+     </div>
+     </section>
+     
+     <section class="container text-start mt-5">
+     <!-- row 2 -->
+     <div class="row justify-items-center text-left g-4">
+     
+          <!-- About Us-->
+          <div class="col-lg-6 col-md-6 col-sm-12 order-md-1">
+               <h2>Why Choose Me?</h2>
+               <p>
+                    With a passion for pinpointing inefficiencies and turning them into opportunities, I bring a dedicated systems-driven mindset to every project I work on. 
+               <p>
+                   I am a quick learner and am very ambitious in developing my knowledge, skills, and abilities. I'm open to taking on new challenges and am prepared to exceed expectations in any role - given the opportunity to learn and adapt to any system or software presented to me.
+               </p>
+          </div>
+          
+          <!-- Core Values-->
+          <div class="col-lg-6 col-md-6 col-sm-12 order-md-2">
+               <h2>Core Values</h2>
+               <ul class="unstyled-list">
+                    <li><strong>Integrity First:</strong> Every professional relationship and engagement is built on accountability, transparency, honesty, and trust.</li>
+                    <li><strong>Client/Employer-Centric Approach:</strong> My contributions are catered to clients/employers processes and needs, not generalized templates — your system and success drives everything I do.</li>
+                    <li><strong>Continuous Improvement:</strong> Optimization doesn’t stop — my knowledge, skills and abilities evolve with your business structure and industry: I am eager to learn and fulfill my role in any position: I will not settle for the minimal degree of competence required to complete a task.</li>
+               </ul>
+          </div>
+          
+     </div>
+     </section>
+     
+     <section class="container text-start my-4">
+     <!-- row 2 -->
+     <div class="row justify-items-center text-left g-4">
+     
+          <!-- Skills and Expertise -->
+          <div class="col-lg-6 col-md-6 col-sm-12 order-md-1">
+               <h2>Skills and Expertise:</h2>
+               <ul>
+                    <li><strong>Coding Languages:</strong> HTML, CSS, Python, JavaScript, Bash</li>
+                    <li><strong>Project Libre:</strong> Project planning and scheduling, task management, resource allocation, PM methodologies (WBS, Network Diagram, Gantt Chartt)</li>
+                    <li><strong>R Studio:</strong> Data analysis and modeling</li>
+                    <li><strong>GitHub:</strong> Collaborating on projects, creating and managing repositories</li>
+                    <li><strong>Microsoft Excel:</strong> Data analysis and modeling</li>
+                    <li><strong>Microsoft Word:</strong> Proficiency in formatting, editing, and creating documents</li>
+                    <li><strong>Microsoft Powerpoint:</strong> Designing custom presentations</li>
+                    <li><strong>Data Flow Diagramming</strong> (Utilizing softwares such as draw.io)</li>
+                    <li><strong>FL Studio:</strong> Music production, audio engineering, mixing, mastering, and sound design</li>       
+               </ul>
+          </div>  
+          
+          <!-- Credentials and Certificates -->
+          <div class="col-lg-6 col-md-6 col-sm-12 order-md-2">
+               <h2>Credentials & Certifications:</h2>
+               <ul>
+                    <li>Bachelor of Business Administration</li>
+                    <li>Major in Business Technology Management</li>
+                    <li>Minor in Computer Science</li>
+                    <li>High School Diploma</li>
+                    <li>Google Analytics Certification</li>
+                    <li>WHMIS</li>
+               </ul>
+          </div>
+     </section>      
+     
+     </main>
+     
+     <!-- CONSULTATION MODAL -->
+     <div class="modal fade" id="consultationModal" tabindex="-1" aria-labelledby="consultationLabel" aria-hidden="true">
+          <div class="modal-dialog">
+               <div class="modal-content">
+                    <div class="modal-header">
+                         <h5 class="modal-title" id="consultationLabel">Contact Me:</h5>
+                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                         <form id="consultationForm" action="https://formspree.io/f/xldjeaed" method="POST">
+                              <div class="mb-3">
+                                   <label for="name" class="form-label">Name</label>
+                                   <input type="text" class="form-control" name="name" required>
+                              </div>
+                              <div class="mb-3">
+                                   <label for="email" class="form-label">Email</label>
+                                   <input type="email" class="form-control" name="email" required>
+                              </div>
+                              <div class="mb-3">
+                                   <label for="phone-number" class="form-label">Phone Number</label>
+                                   <input type="phone-number" class="form-control" name="phone-number" required>
+                              </div>
+                              <div class="mb-3">
+                                   <label for="message" class="form-label">Message</label>
+                                   <textarea class="form-control" name="message" rows="3" required></textarea>
+                              </div>
+                              <button type="submit" class="btn btn-success">Submit Request</button>
+                         </form>
+                    </div>
+               </div>
+          </div>
+     </div>
+     
+     <!-- FOOTER -->
+     <footer class="p-3">
+          <p class="my-auto">© 2025 Caleb Spilman Professional Portfolio</p>
+          <div class="social-media">
+               <div class="linkedin">
+               <!-- Linkedin Icon -->
+               <a href="https://www.linkedin.com/in/caleb-spilman-86b367206/" role="button"</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" color= "white" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                         <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                    </svg>
+               </div>
+               <div class="facebook">
+               <!-- Facebook Icon -->
+               <a href="https://www.facebook.com/story.php?story_fbid=1176543147811915&id=100063687215502&_rdr" role="button"</a>
+               <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" color="white" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+               </svg>
+               </div>
+               <div class="instagram">
+               <!-- Instagram Icon -->
+               <a href="https://www.instagram.com/churchbrewingco/reel/DGx8eQ9v7xb/"</a>
+               <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" color="white" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+               </svg>
+               </div>
+          </div>
+     </footer>
+     
+     <!-- Bootstrap JS and script for collapse buttons -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+     <script>
+          const collapseEl = document.getElementById('storyCollapse');
+          const openBtn = document.getElementById('openBtn');
+          const closeBtn = document.getElementById('closeBtn');
+          const ellipsis = document.getElementById('ellipsis');
+          
+          collapseEl.addEventListener('show.bs.collapse', () => {
+               openBtn.classList.add('d-none');
+               closeBtn.classList.remove('d-none');
+               if (ellipsis) ellipsis.style.display = 'none';
+          });
+          
+          collapseEl.addEventListener('hide.bs.collapse', () => {
+               closeBtn.classList.add('d-none');
+               openBtn.classList.remove('d-none');
+               if (ellipsis) ellipsis.style.display = 'inline';
+          });
+     </script>
+     <script>
+          const toggler = document.querySelector('.navbar-toggler');
+          const navCollapse = document.querySelector('.navbar-collapse');
+     
+          navCollapse.addEventListener('hidden.bs.collapse', () => {
+               toggler.blur();
+          });
+     </script>
+
+</body>
+</html>
